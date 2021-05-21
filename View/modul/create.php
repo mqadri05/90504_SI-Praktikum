@@ -33,14 +33,12 @@
                             <div class="col">
                                 <label for="">Praktikum : </label>
                                 <select name="praktikum" class="form-control" readonly>
-                                    <option value="bd">Basis Data</option>
+                                    <option value="<?= $row['id'] ?>"><?= $row['nama'];?></option>
                                 </select>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary float-right mt-3">Simpan</button>
                     </form>
-
-
                 </div>
             </div>
         </div>
