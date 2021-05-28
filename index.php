@@ -9,7 +9,13 @@ require_once("Model/DaftarPrakModel.php");
 require_once("Model/ModulModel.php");
 require_once("Model/PraktikanModel.php");
 require_once("Model/PraktikumModel.php");
-
+/**Memanggil Controller */
+require_once("Controller/AuthController.php");
+require_once("Controller/PraktikumController.php");
+require_once("Controller/AslabController.php");
+require_once("Controller/PraktikanController.php");
+require_once("Controller/ModulController.php");
+require_once("Controller/DaftarprakModel.php");
 //Routing dari URL ke Obyek Class PHP
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
     $page = $_GET['page']; // Berisi nama page
